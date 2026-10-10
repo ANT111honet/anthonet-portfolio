@@ -1,0 +1,154 @@
+
+/* 1. Basic page styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #203653;
+    background-color: #ffffff;
+}
+
+/* 2. Header */
+header {
+    background-color: #ffffff;
+    padding: 25px 8%;
+    text-align: center;
+    border-bottom: 1px solid #e3edfa;
+}
+
+header h1 {
+    color: #1769e0;
+    font-size: 2.2rem;
+}
+
+header p {
+    color: #526782;
+}
+
+/* 3. Navigation */
+nav {
+    background-color: #f0f6ff;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: #203653;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #1769e0;
+}
+
+/* 4. Main content */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    padding: 35px 25px;
+    margin: 25px 0;
+    border-radius: 12px;
+    background-color: #f4f8ff;
+}
+
+section h2 {
+    color: #1769e0;
+    margin-bottom: 15px;
+}
+
+/* 5. Skills list */
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* 6. Project cards */
+article {
+    background-color: #ffffff;
+    border: 1px solid #d9e7fb;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+article h3 {
+    margin-bottom: 8px;
+}
+
+a {
+    color: #1769e0;
+}
+
+article a {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+article a:hover {
+    color: #0b459c;
+}
+
+/* 7. Footer */
+footer {
+    background-color: #203653;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* 8. Mobile-friendly layout */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+
+    main {
+        padding: 12px;
+    }
+
+    section {
+        padding: 25px 18px;
+    }
+}
+
+article a {
+    display: inline-block;
+    background-color: #1769e0;
+    color: #ffffff;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+article a:hover {
+    background-color: #0b459c;
+}
